@@ -1,12 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- DOCUMENTO HTML: Define el inicio del archivo -->
+<html lang="es">
+
 <head>
+    <!-- METADATOS: Configuración técnica del navegador -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>roy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    <!-- TÍTULO DE LA PÁGINA: Es el nombre que aparece en la pestaña del navegador -->
+    <title>Mi Portafolio - Rodrigo Camacho</title>
     
+    <!-- ENLACE A CSS: Conecta el archivo de estilos para dar formato a la página -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<!-- ETIQUETA BODY: Contiene todo lo que el usuario ve en la pantalla -->
+<body>
+
+    <!-- NAV: Barra de navegación para movernos por el sitio -->
+    <nav>
+        <!-- DIV: Un contenedor genérico para agrupar elementos -->
+        <div class="logo"><strong>Rodrigo Camacho</strong> | Comunicador y Más</div>
+        
+        <!-- UL: Lista desordenada (puntos) para los enlaces -->
+        <ul class="nav-links">
+            <!-- LI: Elemento de la lista -->
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#acerca">Acerca de Mi</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER: Cabecera principal o presentación del autor -->
+    <header>
+        <!-- SPAN: Etiqueta de línea para textos cortos o etiquetas decorativas -->
+        <div class="badge1">
+            <span class="badge">Información es poder</span>
+        </div>
+        <!-- H1: Título principal (solo debe haber uno por página) -->
+        <h1>Hola, Soy Rodrigo Camacho</h1>
+        <!-- P: Párrafo de texto común -->
+        <p>Licenciatura en comunicacion</p>
+    </header>
+
+    <!-- SECTION: Bloques temáticos de contenido (Proyectos) -->
+    <section id="proyectos">
+        <!-- H2: Título de nivel 2 para las secciones -->
+        <h2>Mis Proyectos</h2>
+        <div class="grid-proyectos">
+            
+            <!-- ARTICLE: Representa una pieza de contenido independiente (una tarjeta) -->
+            <article class="tarjeta">
+                <!-- IMG: Imagen del proyecto (utiliza el atributo src) -->
+                <img src= "theee.png" >
+                    <!-- H3: Título de nivel 3 para el nombre del proyecto -->
+                <div>    
+                    <h3>YouTube: TheGameCes</h3>
+                    <p>Un Canal de YouTube que hace reseñas, tutoriales y más. He trabajado con varias empresas de Audio, Software y Radios entre otras. Mi finalidad es Ayudar a la gente a entender mejor la tecnología y su historia.</p>
+                </div>
+            </article>
+
+            <!-- Se repiten las tarjetas de proyectos -->
+            <article class="tarjeta">
+                <img src="xd.jpg" alt="Laptop">
+                <div class="contenido-tarjeta">
+                    <h3>Off Road</h3>
+                    <p>Me apasiona el offroad y me gustaría en un futuro grabar contenido sobre rutas que he hecho y algunos tips</p>
+                </div>
+            </article>
+
+            <article class="tarjeta">
+                <img src="ann.jpg">
+                    <h3>Desde muy joven llamaba mucho mi atención la Ciberseguridad y el lenguaje de las pc, datos y lo relacionado a computadoras o celulares. Eso lo he tenido guardado para mí. En mi canal no he promovido nada de eso y no descarto hacerlo más adelante. Este año voy a lanzar Apps que ayuden a la gente a hacer su vida más practica.</h3>
+                    <p></p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE HABILIDADES -->
+    <section id="habilidades" style="background-color: #f1f5f9;">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-container">
+            <div class="skill-item">HTML5 Semántico</div>
+            <div class="skill-item">CSS3 (Flexbox/Grid)</div>
+            <div class="skill-item">JavaScript Básico</div>
+            <div class="skill-item">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- SECTION DE CONTACTO -->
+    <section id="contacto">
+        <h2>Hablemos</h2>
+        <!-- FORM: Formulario para capturar datos del usuario -->
+        <form id="miFormulario">
+            <!-- INPUT: Campo de entrada de datos de una sola línea -->
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <!-- TEXTAREA: Campo de texto de varias líneas para mensajes largos -->
+            <textarea placeholder="Cuéntame sobre tu proyecto..." rows="5" required></textarea>
+            <!-- BUTTON: Botón para ejecutar una acción (como enviar) -->
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- FOOTER: Pie de página para derechos de autor o información final -->
+    <footer style="text-align: center; padding: 20px; color: #64748b;">
+        <p>© 2026 - Plantilla Educativa para el grupo de Diseño Web</p>
+    </footer>
+
+<!--Script javascript-->
+    <script src="script.js"></script> 
 </body>
 </html>
